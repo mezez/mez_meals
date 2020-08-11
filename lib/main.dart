@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:new_mez_meals/screens/filters_screen.dart';
 import 'package:new_mez_meals/screens/meal_detail_screen.dart';
 import 'package:new_mez_meals/screens/tabs_screen.dart';
 import './screens/category_meals_screen.dart';
@@ -37,6 +38,7 @@ class MyApp extends StatelessWidget {
         '/': (ctx) => TabsScreen(),
         CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(),
       },
       //this is reached when going to a named route with pushname that is note registered in the routes table
       //suitable for dynamic routes or routes generated during the lifecycle of the app that cannot otherwise be predetermined
